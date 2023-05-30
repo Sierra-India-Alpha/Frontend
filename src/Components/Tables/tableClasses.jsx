@@ -1,20 +1,22 @@
 import React from 'react'
-import axios from 'axios'
 import Table from './Table/table'
+import api from '../../Service/api'
 
 const TableClasses = () => {
   const  { useEffect, useState } = React
   const [data, setData] = useState([])
+  const token = sessionStorage.getItem("token")
 
   useEffect(() => {
 
-    axios.get("http://localhost:3333/cursos")
+    api.get('/turmas', {
+      headers:{
+        Authorization: 'Bearer ' + token 
+      }
+    })
       .then((res) => {
         const data = res.data
         console.log(data)
-        // const aux = data
-        // aux.student_name = data.student.name
-        // setData(aux)
         setData(data)
       })
   }, [])
@@ -23,11 +25,19 @@ const TableClasses = () => {
     () => [
       {
         Header: 'Nome',
-        accessor: 'student.name', // accessor is the "key" in the data
+        accessor: 'name', // accessor is the "key" in the data
       },
       {
-        Header: 'Curso',
-        accessor: 'desc',
+        Header: 'Limite de alunos',
+        accessor: 'max_students',
+      },
+      {
+        Header: 'Limite de alunos',
+        accessor: 'max_students',
+      },
+      {
+        Header: 'Limite de alunos',
+        accessor: 'max_students',
       },
     ],
     []

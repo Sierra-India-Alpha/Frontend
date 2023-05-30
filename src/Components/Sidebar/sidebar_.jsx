@@ -12,7 +12,6 @@ const Sidebar_ = () => {
     }
 
     const tipoUsuario = sessionStorage.getItem("tipoUsuario");
-    console.log(tipoUsuario)
 
     return (
         <IconContext.Provider value={{ size: "1.8em", color: "#F0F0F0" }}>

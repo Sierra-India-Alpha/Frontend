@@ -8,7 +8,7 @@ import CreateEnrollments from "./Pages/Matriculas/CreateEnrollments";
 import CreateCourse from "./Pages/Cursos/CreateCourse";
 import CreateClass from "./Pages/Turmas/CreateClass";
 import ConsultEnrollments from "./Pages/Matriculas/ConsultEnrollments";
-import ConsultEnrollmentsUnit from "./Pages/Matriculas/ConsultEnrollmentsUnit";
+// import ConsultEnrollmentsUnit from "./Pages/Matriculas/ConsultEnrollmentsUnit";
 import ConsultClass from "./Pages/Turmas/ConsultClass";
 import CreateUser from "./Pages/Users/CreateUser";
 import ConsultUser from "./Pages/Users/ConsultUser";
@@ -53,7 +53,7 @@ function App() {
 
       <Route path="/create-matricula" element={<CreateEnrollments />} />
       <Route path="/consult-matriculas" element={<ConsultEnrollments />} />
-      <Route path="/consult-matriculas-unidade" element={<ConsultEnrollmentsUnit />} />
+      {/* <Route path="/consult-matriculas-unidade" element={<ConsultEnrollmentsUnit />} /> */}
 
       <Route path="/create-turma" element={<CreateClass />}/>
       <Route path="/consult-turma" element={<ConsultClass />}/>

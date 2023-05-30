@@ -6,7 +6,6 @@ const TableEnrollments = () => {
   const  { useEffect, useState } = React
   const [data, setData] = useState([])
   const token = sessionStorage.getItem("token")
-  console.log(token)
   useEffect(() => {
 
     api.get('/matriculas', {
@@ -17,9 +16,6 @@ const TableEnrollments = () => {
       .then((res) => {
         const data = res.data
         console.log(data)
-        // const aux = data
-        // aux.student_name = data.student.name
-        // setData(aux)
         setData(data)
       })
   }, [])
@@ -31,8 +27,28 @@ const TableEnrollments = () => {
         accessor: 'student.name', // accessor is the "key" in the data
       },
       {
+        Header: 'Curso',
+        accessor: 'course.name',
+      },
+      {
+        Header: 'Turma',
+        accessor: 'class.name',
+      },
+      {
         Header: 'Responsável',
         accessor: 'responsible.name',
+      },
+      {
+        Header: 'E-mail',
+        accessor: 'responsible.email',
+      },
+      {
+        Header: 'Telefone',
+        accessor: 'responsible.phone_number',
+      },
+      {
+        Header: 'Status',
+        accessor: 'status.name.',
       },
     ],
     []
