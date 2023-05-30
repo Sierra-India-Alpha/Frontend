@@ -10,6 +10,7 @@ import GoodForms from "../../Components/Forms/users"
 import Cursos from '../../Components/Forms/cursos'
 import Enrollments from '../../Components/Forms/matriculas'
 import Sidenav from '../../Components/Sidebar/sidebar'
+import Sidebar_ from '../../Components/Sidebar/sidebar_'
 
 
 function Home() {
@@ -30,7 +31,7 @@ function Home() {
 
   return (
     <div className='app-container'>
-      <Sidenav/>
+      <Sidebar_/>
     <ReactModal 
       isOpen={showModal}
       contentLabel="Minimal Modal Example"

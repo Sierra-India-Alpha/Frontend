@@ -1,20 +1,22 @@
 import React from 'react'
-import axios from 'axios'
 import Table from './Table/table'
+import api from '../../Service/api'
 
 const TableUnidades = () => {
   const  { useEffect, useState } = React
   const [data, setData] = useState([])
+  const token = sessionStorage.getItem("token")
 
   useEffect(() => {
 
-    axios.get("http://localhost:3333/cursos")
+    api.get('/matriculas', {
+      headers:{
+        Authorization: 'Bearer ' + token 
+      }
+    })
       .then((res) => {
         const data = res.data
         console.log(data)
-        // const aux = data
-        // aux.student_name = data.student.name
-        // setData(aux)
         setData(data)
       })
   }, [])
