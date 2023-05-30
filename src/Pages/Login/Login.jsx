@@ -1,6 +1,6 @@
 import {useForm} from 'react-hook-form';
 import './style.css'
-import jwt_decode,  { InvalidTokenError  } from 'jwt-decode';
+import jwt_decode from 'jwt-decode';
 import api from '../../Service/api';
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
@@ -9,15 +9,15 @@ const Login = () => {
     let navigate = useNavigate();
  
     const onSubmit = async function handleLogin(data) {
-        try {
             const userData = await api.post("/login", data);
+
             sessionStorage.setItem("login", 'true');
             sessionStorage.setItem("token", userData.data);
+
+            const decoded = jwt_decode(sessionStorage.getItem("token"))
+
+            sessionStorage.setItem("tipoUsuario", decoded.roles[0].id)
             navigate('/home');
-            
-        } catch (error) {
-            alert("aff deu erro :(")
-        }    
     };
 
 

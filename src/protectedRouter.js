@@ -10,7 +10,7 @@ const userAll = () => {
 }
 
 function userCoordenador() {
-  if(sessionStorage.getItem('role') === 'coordenador' && sessionStorage.getItem('login') === 'true'){
+  if(sessionStorage.getItem('role') === '2' && sessionStorage.getItem('login') === 'true'){
       const user = true
       return user;
   }
@@ -19,24 +19,24 @@ function userCoordenador() {
 
 function userDivulgador() {
 
-  if(sessionStorage.getItem('role') === 'divulgador' && sessionStorage.getItem('login') === 'true'){
+  if(sessionStorage.getItem('role') === '3' && sessionStorage.getItem('login') === 'true'){
       const user = true
       return user;
   }
   return false;
 }
 
-function userAdminUnidade() {
+// function userAdminUnidade() {
 
-  if(sessionStorage.getItem('role') === 'admin-unidade' && sessionStorage.getItem('login') === 'true'){
-      const user = true
-      return user;
-  }
-  return false;
-}
+//   if(sessionStorage.getItem('role') === 'admin-unidade' && sessionStorage.getItem('login') === 'true'){
+//       const user = true
+//       return user;
+//   }
+//   return false;
+// }
 
 function userAdmin() {
-    if(sessionStorage.getItem('role') === 'admin'  && sessionStorage.getItem('login') === 'true'){
+    if(sessionStorage.getItem('role') === '1'  && sessionStorage.getItem('login') === 'true'){
         const user = true
         return user;
     }
@@ -64,12 +64,12 @@ function ProtectedDivulgador() {
   );
 }
 
-function ProtectedAdminUnidade() {
-  const isAuth = userAdminUnidade();
-  return (
-    isAuth ? <Outlet /> : <Navigate to='/' />
-  );
-}
+// function ProtectedAdminUnidade() {
+//   const isAuth = userAdminUnidade();
+//   return (
+//     isAuth ? <Outlet /> : <Navigate to='/' />
+//   );
+// }
 
 function ProtectedAdmin() {
     const isAuth = userAdmin();
@@ -78,4 +78,8 @@ function ProtectedAdmin() {
     );
   }
 
-export { ProtectedDivulgador, ProtectedCoordenador, ProtectedAdminUnidade, ProtectedAdmin, ProtectedAll};
+export {ProtectedDivulgador,
+        ProtectedCoordenador,
+        // ProtectedAdminUnidade,
+        ProtectedAdmin,
+        ProtectedAll};
