@@ -1,0 +1,71 @@
+.sidebar{
+    height: 100%;
+    background-color: #223243;
+}
+
+.css-1wvake5{
+    position: fixed !important;
+}
+
+.sideHeader{
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo{
+    width: 70px;
+}
+
+.menu{
+
+    padding: 5px;
+}
+
+.submenu{
+    margin-bottom: 3px;
+    background-color: #ffff !important; 
+    border-radius: 10px;
+}
+
+.menuitem{
+    background-color: #F3F3F3;
+    margin: 5px 0 5px 0;
+    border-radius: 10px;
+    
+}
+
+.css-16jesut >.ps-menu-button{
+    padding: 0 20px 0 3px !important;
+}
+
+/* Submenu hover */
+.css-16jesut >.ps-menu-button:hover{
+    border-radius: 10px;
+}
+
+/* Menuitem hover */
+.css-12vkui9 >.ps-menu-button:hover {
+    border-radius: 10px;
+    background-color: #ffffff !important;
+}
+
+/* Backgroud dos menuitens com border-radius */
+.css-ewdv3l div{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Backgroud dos menuitens que por algum motivo é diferente */
+.css-ewdv3l ul{
+    padding: 4px;
+}
+
+/* Pega a sidebar inteira */
+.css-dip3t8{
+    background-color: #223243 !important;
+}
+
+

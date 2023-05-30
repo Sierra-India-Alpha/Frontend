@@ -1,0 +1,61 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    border: 10px;
+}
+.block{
+    height: fit-content;
+    width: fit-content;
+    background-color: #223243;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+  .form-group {
+  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+
+  .email-login,
+  .senha-login {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .botao {
+    display: flex;
+    justify-content: center;
+    align-self: center;;
+    
+}
+  
+  .login-container input,
+  .login-container button {
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .login-container button {
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    color: #223243 !important;
+  }
+
+  .inputlogin input{
+    border-radius: 10px;
+  }
+
+  .inputlogin{
+    width: fit-content !important;
+  }
+
+  .labellogin{
+    color: aliceblue;
+  }

@@ -1,0 +1,105 @@
+body{
+    background-color: #F0F0F0;
+    align-items: center;
+}
+
+.sidenav{
+  width: 250px;
+  max-width: 250px;
+}
+
+.cadastro-usuario-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.app-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.input-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.select-group{
+  display: flex;
+  flex-direction: row;
+}
+
+.form-wrapper{
+  /* margin: 10px 70px 73px 100px; */
+  width: fit-content;
+}
+
+.reverse{
+  flex-direction: row-reverse !important;
+}
+
+.data-form-group{
+  max-width: fit-content !important;
+}
+
+/* .profession-form-group{
+  width: 30% !important;
+} */
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group input, .form-group select{
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* padding: 5px; */
+    /* max-height: 51px; */
+}
+
+
+ .checkbox-group {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly; 
+  }
+
+   
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    appearance: none;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkbox input[type="checkbox"]:checked {
+    background-color: #252050;
+  }
+  
+  .checkbox label {
+    font-weight: normal;
+  } 
+
+  .cadastro button{
+    border-radius: 10px;
+    color: antiquewhite;
+    background-color: #223243;
+    padding: 7px;
+    width: fit-content;
+  }
