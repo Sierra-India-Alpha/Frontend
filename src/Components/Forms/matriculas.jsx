@@ -5,11 +5,12 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
     const {register, handleSubmit} = useForm();
   return (
     <div className='form-container'>
+        <div className='form-wrapper'>
             <h1>Cadastrar Aluno</h1>
             
             <div className='dados aluno'>
                 <div className='input-group'>
-                    <div className='form-group cpf-aluno'>
+                    <div className='form-group'>
                         <label>CPF*</label>
                         <input
                                 //className{errors?.cpf && "input-error"}
@@ -22,7 +23,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.cpf && <p className="error-message">{errors?.cpf}</p>} */}
                     </div>
                     
-                    <div className="form-group rg-aluno">
+                    <div className="form-group">
                         <label>RG</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -33,7 +34,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.rg && <p className="error-message">{errors?.rg}</p>} */}
                     </div>
                     
-                    <div className='form-group sexo-aluno'>
+                    <div className='form-group'>
                         <label>Sexo</label>
                         <div className='checkbox-group'>
                             <div className='checkbox'>
@@ -54,7 +55,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                 </div>
 
                 <div className='input-group'>
-                    <div className='form-group nome-aluno'>
+                    <div className='form-group'>
                         <label>Nome</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -67,7 +68,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
 
                     
 
-                    <div className='form-group data-aluno'>
+                    <div className='form-group'>
                         <label>Data</label>
                         <input
                             // className={errors?. date && 'input-error'}
@@ -81,7 +82,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
 
                 <div className='input-group'>
                     
-                    <div className='form-group sexo-aluno'>
+                    <div className='form-group'>
                     <label>Pode sair sozinho?</label>
                         <div className='checkbox-group'>                           
                             <div className='checkbox'>
@@ -96,7 +97,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                     {/* {errors?.privacyTerms && <p className="error-message">{errors?.privacyTerms</p>} */}
                     </div>
 
-                    <div className='form-group email-aluno'>
+                    <div className='form-group'>
                         <label>Email</label>
                         <input
                             //className{errors?.email && "input-error"}
@@ -107,7 +108,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.email && <p className="error-message">{errors?.email}</p>} */}
                     </div>
 
-                    <div className='form-group tel-aluno'>
+                    <div className='form-group'>
                         <label>Telefone</label>
                         <input
                             //className{errors?.phone && "input-error"}
@@ -121,7 +122,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
             </div>
             <h1>Cadastrar Responsável</h1>
                 <div className='input-group'>
-                    <div className='form-group cpf-resp'>
+                    <div className='form-group'>
                         <label>CPF*</label>
                         <input
                                 //className{errors?.cpf && "input-error"}
@@ -134,7 +135,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.cpf && <p className="error-message">{errors?.cpf}</p>} */}
                     </div>
                 
-                    <div className="form-group rg-resp">
+                    <div className="form-group">
                         <label>RG</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -145,7 +146,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.rg && <p className="error-message">{errors?.rg}</p>} */}
                     </div>
 
-                    <div className='form-group sexo-resp'>
+                    <div className='form-group'>
                         <label>Sexo</label>
                         <div className='checkbox-group'>
                             <div className='checkbox'>
@@ -166,7 +167,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                 </div>
                 
                 <div className='input-group'>
-                    <div className='form-group nome-resp'>
+                    <div className='form-group'>
                         <label>Nome</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -177,7 +178,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.name && <p className="error-message">{errors?.name}</p>} */}
                     </div>
                 
-                    <div className='form-group data-resp'>
+                    <div className='form-group'>
                         <label>Data</label>
                         <input
                             // className={errors?. date && 'input-error'}
@@ -191,7 +192,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
 
                 <div className='input-group'>
                 
-                    <div className='form-group email-resp'>
+                    <div className='form-group'>
                         <label>Email</label>
                         <input
                             //className{errors?.email && "input-error"}
@@ -202,7 +203,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.email && <p className="error-message">{errors?.email}</p>} */}
                     </div> 
 
-                    <div className='form-group tel-resp'>
+                    <div className='form-group'>
                         <label>Telefone</label>
                         <input
                             //className{errors?.phone && "input-error"}
@@ -215,7 +216,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                 </div>
                             
                 <div className='input-group'>
-                    <div className="form-group logradouro-resp">
+                    <div className="form-group">
                         <label>Logradouro</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -226,29 +227,23 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.logradouro && <p className="error-message">{errors?.logradouro}</p>} */}
                     </div>
 
-                    <div className='form-group cep'>
+                    <div className='form-group'>
                             <label>CEP*</label>
                             <input
                                 type='text'
                                 placeholder='CEP'
-                                {...register('cep_enrollment', {
-                                    required: 'Este campo é obrigatório',
-                                    pattern: {
-                                    value: /^\d{5}-?\d{3}$/,
-                                    message: 'Informe um CEP válido'
-                                    }
-                                })}
+                                {...register('cep_enrollment')}
                                 />
                             {/*{errors.cep && <p className="error-message">{errors.cep}</p>}*/}
                     </div>
                                 
-                    <div className='form-group number-resp'>
+                    <div className='form-group'>
                         <label>Número*</label>
                         <input
                             type='text'
                             placeholder='Número'
                             {...register('residenceNumber', {
-                                required: 'Este campo é obrigatório'
+                                required: 'Este campo é obrigatóri'
                             })}
                             />
                         {/*{errors.residenceNumber && <p className="error-message">{errors.residenceNumber.message}</p>}*/}
@@ -256,7 +251,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                 </div>
 
                 <div className='input-group'>
-                    <div className="form-group complemento-resp">
+                    <div className="form-group">
                         <label>Complemento</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -267,7 +262,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.complemento && <p className="error-message">{errors?.complemento}</p>} */}
                     </div>               
 
-                    <div className="form-group bairro-resp">
+                    <div className="form-group">
                         <label>Bairro</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -278,7 +273,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.bairro && <p className="error-message">{errors?.bairro}</p>} */}
                     </div>
                     
-                    <div className="form-group cidade-resp">
+                    <div className="form-group">
                         <label>Cidade</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -289,28 +284,23 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.cidade && <p className="error-message">{errors?.cidade}</p>} */}
                     </div>
                     
-                    <div className="form-group uf-resp">
+                    <div className="form-group">
                             <label>UF*</label>
                             <input
                                 //className{errors?.uf && "input-error"}
                                 type="text"
                                 placeholder="UF"
-                                {...register('uf_enrollment', {
-                                    required: 'Este campo é obrigatório',
-                                    pattern: {
-                                        value: /[A-Z]{2}/,
-                                        message: 'Informe um UF válido com duas letras maiúsculas'
-                                    }
-                                })}
+                                {...register('uf_enrollment')}
+                                
                                 />
                             {/*{errors.uf && <p className="error-message">{errors.uf}</p>}*/}
                     </div>
                 </div>        
                 
             
-            <div className='select-group'>
+            <div className='input-group'>
 
-                <div className='form-group curso'>
+                <div className='form-group'>
                         <label>Tipo de usuário</label>
                         <select
                         {...register('course_enrrolment')}
@@ -324,7 +314,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                     {/* {errors?.profession && (<p className="error-message">{errors?.profession}</p>)} */}
                 </div>
 
-                <div className='form-group unidade'>
+                <div className='form-group'>
                         <label>Tipo de usuário</label>
                         <select
                         {...register('unidade')}
@@ -338,7 +328,7 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                     {/* {errors?.profession && <p className="error-message">{errors?.profession}</p>} */}
                 </div>
 
-                <div className='form-group turma'>
+                <div className='form-group'>
                         <label>Tipo de usuário</label>
                         <select
                         {...register('profession')}
@@ -353,11 +343,11 @@ const Enrollments = ({submitButtonTitle, onSubmit}) => {
                 </div>   
 
             </div>
-            <div className='form-group botao'>
+            <div className='form-group'>
                 <button onClick={e=> handleSubmit(onSubmit)()}>{submitButtonTitle}</button>
             </div>
-                
-        </div>
+        </div>         
+    </div>
   )
 }
 

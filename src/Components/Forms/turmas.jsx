@@ -4,10 +4,11 @@ import { useForm } from 'react-hook-form'
 const Turmas = ({submitButtonTitle, onSubmit}) => {
     const {register, handleSubmit} = useForm();
   return (
-    <div className='class-container'>
+    <div className='app-container'>
+        <div className='form-wrapper'>
             <h1>Cadastrar Turma</h1>
                 <div className='input-group'>
-                    <div className='form-group curso'>
+                    <div className='form-group'>
                             <label>Unidade</label>
                             <select
                             {...register('unit_class')}
@@ -37,7 +38,7 @@ const Turmas = ({submitButtonTitle, onSubmit}) => {
                  </div>
                 
                 <div className='input-group'>
-                    <div className='form-group nome-curso'>
+                    <div className='form-group'>
                         <label>Nome</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -47,7 +48,7 @@ const Turmas = ({submitButtonTitle, onSubmit}) => {
                         />
                         {/* {errors?.name && <p className="error-message">{errors?.name}</p>} */}
                     </div>
-                    <div className='form-group limite-aluno'>
+                    <div className='form-group'>
                         <label>Limite Aluno</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -61,7 +62,7 @@ const Turmas = ({submitButtonTitle, onSubmit}) => {
                 
                 <div className='input-group'>
                     <label>Horário</label>
-                    <div className='form-group curso'>
+                    <div className='form-group'>
                             <label>Dia da Semana</label>
                             <select
                             {...register('week_class')}
@@ -79,7 +80,7 @@ const Turmas = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.profession && (<p className="error-message">{errors?.profession}</p>)} */}
                     </div>
                     
-                    <div className='form-group inicio'>
+                    <div className='form-group'>
                         <label>Inicio</label>
                         <input
                             type='time'
@@ -88,7 +89,7 @@ const Turmas = ({submitButtonTitle, onSubmit}) => {
                         />
                     </div>
 
-                    <div className='form-group fim'>
+                    <div className='form-group'>
                         <label>Fim</label>
                         <input
                             type='time'
@@ -98,10 +99,11 @@ const Turmas = ({submitButtonTitle, onSubmit}) => {
                     </div>
                 </div>
            
-                <div className='form-group botao'>
+                <div className='form-group'>
                 <button onClick={e=> handleSubmit(onSubmit)()}>{submitButtonTitle}</button>
                 </div>
         </div>
+    </div>
   )
 }
 

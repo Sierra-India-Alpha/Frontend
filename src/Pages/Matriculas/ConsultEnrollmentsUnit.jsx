@@ -17,7 +17,7 @@ const ConsultEnrollmentsUnit = () => {
             <div className='form-wrapper'>
             <h1>Consultar Matrículas</h1> 
                 <div className='input-group'>
-                    <div className='form-group curso'>
+                    <div className='form-group'>
                         <label>Curso</label>
                         <select
                         {...register('course_enrrolment')}
@@ -31,7 +31,7 @@ const ConsultEnrollmentsUnit = () => {
                         {/* {errors?.profession && (<p className="error-message">{errors?.profession}</p>)} */}
                     </div>
 
-                    <div className='form-group turma'>
+                    <div className='form-group'>
                         <label>Turma</label>
                         <select
                         {...register('unidade')}
@@ -45,7 +45,7 @@ const ConsultEnrollmentsUnit = () => {
                     {/* {errors?.profession && <p className="error-message">{errors?.profession}</p>} */}
                     </div>
 
-                    <div className='form-group unidade'>
+                    <div className='form-group'>
                             <label>Unidade</label>
                             <select
                             {...register('unit_enrollment')}
@@ -59,7 +59,7 @@ const ConsultEnrollmentsUnit = () => {
                         {/* {errors?.profession && <p className="error-message">{errors?.profession}</p>} */}
                     </div>
 
-                        <div className='form-group status'>
+                        <div className='form-group'>
                             <label>Status</label>
                             <select
                             {...register('status_enrollment')}

@@ -9,10 +9,10 @@ const ConsultClassUnit = () => {
         console.log(data)
     };
     return(
-        <div className='class-unit-container'>
+        <div className='app-container'>
             <h1>Consulta de Turmas</h1>
                 <div className='input-group'>
-                    <div className='form-group unidade'>
+                    <div className='form-group'>
                         <label>Unidade</label>
                             <select
                             {...register('unit_class')}
@@ -24,7 +24,7 @@ const ConsultClassUnit = () => {
                         </select>
                     </div>
 
-                    <div className='form-group curso'>
+                    <div className='form-group'>
                             <label>Curso</label>
                             <select
                             {...register('course_enrrolment')}

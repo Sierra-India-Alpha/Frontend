@@ -6,10 +6,11 @@ const ConsultUser = () => {
     console.log('RENDER');
  
     return(
-        <div className='user-container'>
+    <div className='app-container'>
+        <div className='form-wrapper'>
             <div className='input-group'>
             
-                <div className='form-group usuario'>
+                <div className='form-group'>
                     <label>Tipo Usuário</label>
                         <select
                         {...register('user')}
@@ -22,7 +23,7 @@ const ConsultUser = () => {
 
                 </div>
 
-                <div className='form-group unidade'>
+                <div className='form-group'>
                     <label>Unidade</label>
                         <select
                         {...register('unit')}
@@ -35,7 +36,9 @@ const ConsultUser = () => {
                     
                 </div>
             </div>
-     </div>
+        </div>
+    </div>
+    
     )
 };
     

@@ -9,7 +9,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
 
     <div className='select-group'>
 
-        <div className='form-group profession-form-group'>
+        <div className='form-group'>
             <label>Tipo de usuário</label>
             <select
                 {...register('profession')}
@@ -22,7 +22,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
 
 
         </div>
-        <div className='form-group profession-form-group'>
+        <div className='form-group'>
             <label>Tipo de usuário</label>
             <select
                 {...register('unit')}
@@ -39,7 +39,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
     <div className='input-group reverse'>
 
 
-        <div className='form-group data-form-group'>
+        <div className='form-group'>
             <label>Data</label>
             <input
                 // className={errors?. date && 'input-error'}
@@ -50,7 +50,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             {/* {errors?.date && (<p className="error-message">{errors?.date}</p>)} */}
         </div>
 
-        <div className='form-group nome-form-group'>
+        <div className='form-group'>
             <label>Nome</label>
             <input
                 // className={errors?.name && 'input-error'}
@@ -65,7 +65,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
 
     <div className='input-group'>
 
-        <div className='form-group email-form-group'>
+        <div className='form-group'>
             <label>Email</label>
             <input
                 //className{errors?.email && "input-error"}
@@ -76,7 +76,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             {/* {errors?.email && (<p className="error-message">{errors?.email}</p>)} */}
         </div>
 
-        <div className='form-group phone-form-group'>
+        <div className='form-group'>
             <label>Telefone</label>
             <input
                 //className{errors?.phone && "input-error"}
@@ -94,7 +94,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
     <div className='input-group'>
 
 
-        <div className='form-group cpf-form-group'>
+        <div className='form-group'>
             <label>CPF</label>
             <input
                 //className{errors?.cpf && "input-error"}
@@ -106,7 +106,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             />
             {/* {errors?.cpf && (<p className="error-message">{errors?.cpf}</p>)} */}
         </div>
-        <div className="form-group rg-form-group">
+        <div className="form-group">
             <label>RG</label>
             <input
                 //className{errors?.rg && "input-error"}
@@ -117,7 +117,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             {/* {errors?.rg && (<p className="error-message">{errors?.rg}</p>)} */}
         </div>
 
-        <div className='form-group sexo-form-group'>
+        <div className='form-group'>
             <label>Sexo</label>
             <div className='checkbox-group'>
                 <div className='checkbox'>
@@ -138,23 +138,17 @@ const Users = ({submitButtonTitle, onSubmit}) => {
     </div>
 
     <div className='input-group'>
-        <div className='form-group cep-form-group'>
+        <div className='form-group'>
             <label>CEP</label>
             <input
                 type='text'
                 placeholder='CEP'
-                {...register('cep', {
-                    required: 'Este campo é obrigatório',
-                    pattern: {
-                        value: /^\d{5}-?\d{3}$/,
-                        message: 'Informe um CEP válido'
-                    }
-                })}
+                {...register('cep')}
             />
             {/*{errors.cep && (<p className="error-message">{errors.cep}</p>)}*/}
         </div>
 
-        <div className='form-group logradouro-form-group'>
+        <div className='form-group'>
             <label>Logradouro</label>
             <input
                 // className={errors?.logradouro && 'input-error'}
@@ -164,14 +158,12 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             />
             {/* {errors?.logradouro && (<p className="error-message">{errors?.logradouro}</p>)} */}
         </div>
-        <div className='form-group number-form-group'>
+        <div className='form-group'>
             <label>Número</label>
             <input
                 type='text'
                 placeholder='Número'
-                {...register('residenceNumber', {
-                    required: 'Este campo é obrigatório'
-                })}
+                {...register('residenceNumber')}
             />
             {/*{errors.residenceNumber && <p className="error-message">{errors.residenceNumber.message}</p>)}*/}
         </div>
@@ -180,7 +172,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
     <div className='input-group'>
 
 
-        <div className="form-group complemento-form-group">
+        <div className="form-group">
             <label>Complemento</label>
             <input
                 //className{errors?.complemento && "input-error"}
@@ -191,7 +183,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             {/* {errors?.complemento && (<p className="error-message">{errors?.complemento}</p>)} */}
         </div>
 
-        <div className="form-group bairro-form-group">
+        <div className="form-group">
             <label>Bairro</label>
             <input
                 //className{errors?.bairro && "input-error"}
@@ -202,7 +194,7 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             {/* {errors?.bairro && (<p className="error-message">{errors?.bairro}</p>)} */}
         </div>
 
-        <div className="form-group cidade-form-group">
+        <div className="form-group">
             <label>Cidade</label>
             <input
                 //className{errors?.cidade && "input-error"}
@@ -213,19 +205,13 @@ const Users = ({submitButtonTitle, onSubmit}) => {
             {/* {errors?.cidade && (<p className="error-message">{errors?.cidade}</p>)} */}
         </div>
 
-        <div className="form-group uf-form-group">
+        <div className="form-group">
             <label>UF</label>
             <input
                 //className{errors?.uf && "input-error"}
                 type="text"
                 placeholder="UF"
-                {...register('uf', {
-                    required: 'Este campo é obrigatório',
-                    pattern: {
-                        value: /[A-Z]{2}/,
-                        message: 'Informe um UF válido com duas letras maiúsculas'
-                    }
-                })}
+                {...register('uf')}
             />
             {/*{errors.uf && (<p className="error-message">{errors.uf}</p>)}*/}
         </div>

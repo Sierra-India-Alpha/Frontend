@@ -22,9 +22,11 @@ const Login = () => {
 
 
     return(
-        <div className='login-container'>
+        
+    <div className='APP-container'>
+       <div className='form-wrapper'>    
            <div className='block'> 
-            <div className='form-group inputlogin'>
+            <div className='form-group'>
                 <label className='labellogin'>Usuário</label>
                 <input
                 type='text'
@@ -33,7 +35,7 @@ const Login = () => {
                 /> 
             </div>
 
-            <div className='form-group inputlogin'>
+            <div className='form-group'>
                 <label className='labellogin'>Senha</label>
                 <input
                 type='password'
@@ -41,11 +43,13 @@ const Login = () => {
                 {...register("password")}
                 /> 
             </div>
-            <div className='form-group botao'>
+            <div className='form-group'>
                 <button onClick={()=> handleSubmit(onSubmit)()}>Entrar</button>
             </div>
             </div>
         </div>
+    </div>
+    
     )
 
 }

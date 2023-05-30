@@ -6,10 +6,11 @@ const CreateUnit = () => {
     console.log('RENDER');
  
     return(
-        <div className='unit-container'>
+    <div className='app-container'>
+       <div className='form-wrapper'>     
             <h1>Cadastrar Unidade</h1>
             <div className='input-group'>
-                    <div className='form-group nome-unidade'>
+                    <div className='form-group'>
                         <label>Nome</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -20,7 +21,7 @@ const CreateUnit = () => {
                         {/* {errors?.name && <p className="error-message">{errors?.name}</p>} */}
                     </div>
 
-                    <div className='form-group cnpj-unidade'>
+                    <div className='form-group'>
                         <label>CNPJ*</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -32,7 +33,7 @@ const CreateUnit = () => {
                     </div>
             </div>
             <div className='input-group'>
-                <div className='form-group email-coorenador'>
+                <div className='form-group'>
                         <label>Email</label>
                         <input
                             //className{errors?.email && "input-error"}
@@ -43,7 +44,7 @@ const CreateUnit = () => {
                         {/* {errors?.email && <p className="error-message">{errors?.email}</p>} */}
                 </div>
 
-                <div className='form-group tel-coordenador'>
+                <div className='form-group'>
                         <label>Telefone</label>
                         <input
                             //className{errors?.email && "input-error"}
@@ -53,7 +54,7 @@ const CreateUnit = () => {
                             />
                         {/* {errors?.email && <p className="error-message">{errors?.email}</p>} */}
                 </div>
-                <div className='form-group coordenador'>
+                <div className='form-group'>
                     <label>Coordenador</label>
                     <select
                         {...register('coordenar_unit')}
@@ -66,7 +67,7 @@ const CreateUnit = () => {
 
             </div>
             <div className='input-group'>
-                    <div className="form-group logradouro-unit">
+                    <div className="form-group">
                         <label>Logradouro</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -77,7 +78,7 @@ const CreateUnit = () => {
                         {/* {errors?.logradouro && <p className="error-message">{errors?.logradouro}</p>} */}
                     </div>
 
-                    <div className='form-group cep-unit'>
+                    <div className='form-group'>
                             <label>CEP*</label>
                             <input
                                 type='text'
@@ -93,7 +94,7 @@ const CreateUnit = () => {
                             {/*{errors.cep && <p className="error-message">{errors.cep}</p>}*/}
                     </div>
                                 
-                    <div className='form-group number-unit'>
+                    <div className='form-group'>
                         <label>Número*</label>
                         <input
                             type='text'
@@ -107,7 +108,7 @@ const CreateUnit = () => {
             </div>
 
                 <div className='input-group'>
-                    <div className="form-group complemento-unit">
+                    <div className="form-group">
                         <label>Complemento</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -118,7 +119,7 @@ const CreateUnit = () => {
                         {/* {errors?.complemento && <p className="error-message">{errors?.complemento}</p>} */}
                     </div>               
 
-                    <div className="form-group bairro-unit">
+                    <div className="form-group">
                         <label>Bairro</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -129,7 +130,7 @@ const CreateUnit = () => {
                         {/* {errors?.bairro && <p className="error-message">{errors?.bairro}</p>} */}
                     </div>
                     
-                    <div className="form-group cidade-unit">
+                    <div className="form-group">
                         <label>Cidade</label>
                         <input
                             //className{errors?.rg && "input-error"}
@@ -140,7 +141,7 @@ const CreateUnit = () => {
                         {/* {errors?.cidade && <p className="error-message">{errors?.cidade}</p>} */}
                     </div>
                     
-                    <div className="form-group uf-unit">
+                    <div className="form-group">
                             <label>UF*</label>
                             <input
                                 //className{errors?.uf && "input-error"}
@@ -158,6 +159,8 @@ const CreateUnit = () => {
                     </div>
                 </div>
         </div>
+    </div>
+    
     )
 }
 

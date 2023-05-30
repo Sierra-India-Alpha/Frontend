@@ -1,4 +1,4 @@
-.class-container{
+.app-container{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,24 +7,7 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-.consultclass-container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 0 100px;
-    background-color: #f0f0f0;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.class-unit-container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 0 100px;
-    background-color: #f0f0f0;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+
 .form-group{
     display: flex;
     flex-direction: column;
@@ -51,11 +34,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.select-group{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .checkbox{
     display: flex;
     flex-direction: row;
@@ -63,13 +42,6 @@
 
 .sub-titulo{
     font-size: 24px;
-}
-.permission {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-evenly; 
-    flex-direction: row;
 }
 
 .botao button{
@@ -84,19 +56,5 @@
 .botao button{
     background-color: #223243;
     color: antiquewhite;
-}
-
-
-.form-group{
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group select{
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
 }
 

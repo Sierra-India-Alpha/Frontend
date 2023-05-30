@@ -7,9 +7,10 @@ const Cursos = ({submitButtonTitle, onSubmit}) => {
     const {register, handleSubmit} = useForm();
 
   return (
-    <div className='criacurso-container'>
+    <div className='app-container'>
+       <div className='form-wrapper'>   
             <h1>Cadastrar Curso</h1>
-                    <div className='form-group nome-curso'>
+                    <div className='form-group'>
                         <label>Nome</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -20,7 +21,7 @@ const Cursos = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.name && <p className="error-message">{errors?.name}</p>} */}
                     </div>
 
-                    <div className='form-group desc-curso'>
+                    <div className='form-group'>
                         <label>Descrição</label>
                         <textarea   
                             name="descricao"
@@ -30,7 +31,7 @@ const Cursos = ({submitButtonTitle, onSubmit}) => {
                         />
                     </div>
                 <div className='input-group'>
-                    <div className='form-group mesalidade-curso'>
+                    <div className='form-group'>
                             <label>Valor da Mensalidade</label>
                             <input
                             // className={errors?.name && 'input-error'}
@@ -41,7 +42,7 @@ const Cursos = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.name && <p className="error-message">{errors?.name}</p>} */}
                     </div>
 
-                    <div className='form-group duracao-curso'>
+                    <div className='form-group'>
                             <label>Duração em meses</label>
                             <input
                             // className={errors?.duracao && 'input-error'}
@@ -52,10 +53,11 @@ const Cursos = ({submitButtonTitle, onSubmit}) => {
                         {/* {errors?.name && <p className="error-message">{errors?.duracao}</p>} */}
                     </div>
                 </div>
-            <div className='form-group botao'>
+            <div className='form-group'>
             <button onClick={e=> handleSubmit(onSubmit)()}>{submitButtonTitle}</button>
             </div>
-        </div>
+        </div>    
+    </div>
   )
 }
 

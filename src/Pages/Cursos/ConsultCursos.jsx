@@ -8,10 +8,11 @@ const ConsultCursos = () => {
     console.log('RENDER');
 
     return(
-        <div className='consultcourser-container'>
+    <div className='app-container'>
+        <div className='form-wrapper'> 
             <h1>Consultar Cursos</h1>
             <div className='input-group'>
-                <div className='form-group unidade-curso'>
+                <div className='form-group'>
                                 <label>Unidade</label>
                                 <select
                                 {...register('unidade_couses')}
@@ -25,7 +26,7 @@ const ConsultCursos = () => {
                         {/* {errors?.profession && <p className="error-message">{errors?.profession}</p>} */}
                 </div>
 
-                <div className='form-group status'>
+                <div className='form-group'>
                             <label>Status</label>
                             <select
                             {...register('status_courses')}
@@ -41,7 +42,8 @@ const ConsultCursos = () => {
             </div>
             <TableCursos/>
         </div>
-    )
+    </div>
+)
 
 }
 

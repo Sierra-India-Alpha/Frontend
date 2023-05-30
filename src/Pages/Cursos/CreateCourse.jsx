@@ -11,7 +11,7 @@ const CreateCourse = () => {
     };
     return(
 
-        <div className='criacurso-container'>
+        <div className='app-container'>
             <Cursos submitButtonTitle={"Cadastrar curso"} onSubmit={onSubmit}/>
         </div>
     

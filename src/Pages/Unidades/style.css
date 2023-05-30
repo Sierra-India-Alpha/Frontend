@@ -1,4 +1,4 @@
-.unit-container{
+.app-container{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -6,17 +6,6 @@
     background-color: #B6B6B6;
     justify-content: flex-start;
 }
-
-.mat-container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 0 100px;
-    width: 100vw;
-    background-color: #B6B6B6;
-    justify-content: center;
-}
-
 .form-group{
     display: flex;
     flex-direction: column;
@@ -44,11 +33,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.select-group{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .checkbox{
     display: flex;
     flex-direction: row;
@@ -57,14 +42,6 @@
 .sub-titulo{
     font-size: 24px;
 }
-.permission {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-evenly; 
-    flex-direction: row;
-}
-
 .botao button{
     align-self: end;
     width: 150px;
@@ -73,39 +50,7 @@
     border-radius: 10px;
 }
 
-.dados-responsavel{
-    box-shadow: 3px solid blue;
-    border-color: blue;
-    background-color: white;
-}
-
-
 .botao button:hover{
     background-color: blue;
-}
-
-.consult-container{
-    background-color: #B6B6B6;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0 0 20px;
-    justify-content: flex-start;
-}
-
-.form-group{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 100px;
-}
-
-.form-group select{
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-right: 1px;
 }
 

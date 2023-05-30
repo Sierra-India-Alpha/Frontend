@@ -18,7 +18,7 @@ const ConsultClass = () => {
             <div className='form-wrapper'>
             <h1>Consultar Turma</h1>
                 <div className='input-group'>
-                    <div className='form-group curso'>
+                    <div className='form-group'>
                             <label>Unidade</label>
                             <select
                             {...register('unit_class')}
@@ -32,7 +32,7 @@ const ConsultClass = () => {
                         {/* {errors?.profession && (<p className="error-message">{errors?.profession}</p>)} */}
                     </div>
 
-                        <div className='form-group curso'>
+                        <div className='form-group'>
                             <label>Curso</label>
                             <select
                             {...register('course_enrrolment')}
@@ -48,7 +48,7 @@ const ConsultClass = () => {
                  </div>
                 
                 <div className='input-group'>
-                    <div className='form-group nome-curso'>
+                    <div className='form-group'>
                         <label>Nome</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -58,7 +58,7 @@ const ConsultClass = () => {
                         />
                         {/* {errors?.name && <p className="error-message">{errors?.name}</p>} */}
                     </div>
-                    <div className='form-group limite-aluno'>
+                    <div className='form-group'>
                         <label>Limite Aluno</label>
                         <input
                             // className={errors?.name && 'input-error'}
@@ -72,7 +72,7 @@ const ConsultClass = () => {
                 
                 <div className='input-group'>
                     <label>Horário</label>
-                    <div className='form-group curso'>
+                    <div className='form-group'>
                             <label>Dia da Semana</label>
                             <select
                             {...register('week_class')}
@@ -90,7 +90,7 @@ const ConsultClass = () => {
                         {/* {errors?.profession && (<p className="error-message">{errors?.profession}</p>)} */}
                     </div>
                     
-                    <div className='form-group inicio'>
+                    <div className='form-group'>
                         <label>Inicio</label>
                         <input
                             type='time'
@@ -99,7 +99,7 @@ const ConsultClass = () => {
                         />
                     </div>
 
-                    <div className='form-group fim'>
+                    <div className='form-group'>
                         <label>Fim</label>
                         <input
                             type='time'
