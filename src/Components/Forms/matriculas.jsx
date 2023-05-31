@@ -121,7 +121,7 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                                 //className{errors?.rg && "input-error"}
                                 type="text"
                                 placeholder="RG"
-                                {...register('student_rg_student')}
+                                {...register('student_rg')}
                             />
                             {/* {errors?.rg && <p className="error-message">{errors?.rg}</p>} */}
                         </div>
@@ -181,7 +181,7 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                                 // className={errors?. date && 'input-error'}
                                 type='date'
                                 placeholder='DD/MM/AA'
-                                {...register("student_date", {require})
+                                {...register("student_birth_date", {require})
                             }
                             />
                             {/* {errors?.date && <p className="error-message">{errors?.date}</p>} */}
@@ -284,7 +284,7 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                             // className={errors?. date && 'input-error'}
                             type='date'
                             placeholder='DD/MM/AA'
-                            {...register("responsible_date", {require})}
+                            {...register("responsible_birth_date", {require})}
                         />
                         {/* {errors?.date && <p className="error-message">{errors?.date}</p>} */}
                     </div>
@@ -310,7 +310,7 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                             //className{errors?.phone && "input-error"}
                             type='tel'
                             placeholder='Telefone'
-                            {...register('responsible_tel')}
+                            {...register('responsible_phone_number')}
                         // {required})}
                         />
                         {/* {errors?.tel && <p className="error-message">{errors?.tel}</p>} */}
@@ -334,7 +334,7 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                         <input
                             type='text'
                             placeholder='CEP'
-                            {...register('responsible_cep')}
+                            {...register('responsible_zipcode')}
                         />
                         {/*{errors.cep && <p className="error-message">{errors.cep}</p>}*/}
                     </div>
