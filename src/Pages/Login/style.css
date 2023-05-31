@@ -15,11 +15,11 @@
     align-items: center;
     justify-content: center;
 }
-  .form-group {
+  /* .form-group {
   margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-}
+} */
   
 
   .email-login,

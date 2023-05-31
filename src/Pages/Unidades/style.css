@@ -1,12 +1,12 @@
-.app-container{
+/* .app-container{
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0 100px;
     background-color: #B6B6B6;
     justify-content: flex-start;
-}
-.form-group{
+} */
+/* .form-group{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -19,7 +19,7 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;
-}
+} */
 
 .checkbox-group {
     display: flex;
@@ -28,11 +28,11 @@
     justify-content: space-evenly; 
   }
 
-.input-group{
+/* .input-group{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 
 .checkbox{
     display: flex;

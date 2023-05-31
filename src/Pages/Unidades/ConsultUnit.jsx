@@ -1,5 +1,6 @@
 import {useForm} from 'react-hook-form';
 import './style.css';
+import Sidebar_ from '../../Components/Sidebar/sidebar_';
 
 const ConsultUnit = () => {
     const {register} = useForm();
@@ -8,6 +9,9 @@ const ConsultUnit = () => {
  
     return(
     <div className='app-container'>
+        <div className='sidenav'>
+            <Sidebar_/>
+        </div>
         <div className='form-wrapper'>    
             <h1>Consultar Unidade</h1>
             <div className='input-group'>

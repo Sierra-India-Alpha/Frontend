@@ -11,7 +11,7 @@ export const SidebarData = [
           {
             title: 'Cadastro de Usuário',
             link: '/create-user',
-            admin: 1,
+            subadmin: 1,
           },
           {
             title: 'Consulta de Usuário',

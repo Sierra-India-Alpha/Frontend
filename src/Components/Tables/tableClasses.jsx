@@ -28,16 +28,20 @@ const TableClasses = () => {
         accessor: 'name', // accessor is the "key" in the data
       },
       {
-        Header: 'Limite de alunos',
-        accessor: 'max_students',
+        Header: 'Curso',
+        accessor: 'course.name',
       },
       {
         Header: 'Limite de alunos',
         accessor: 'max_students',
       },
       {
-        Header: 'Limite de alunos',
-        accessor: 'max_students',
+        Header: 'Início',
+        accessor: 'start_of_class',
+      },
+      {
+        Header: 'Fim',
+        accessor: 'end_of_class',
       },
     ],
     []

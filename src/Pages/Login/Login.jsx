@@ -18,12 +18,17 @@ const Login = () => {
 
             sessionStorage.setItem("tipoUsuario", decoded.roles[0].id)
             navigate('/home');
+
+                api.defaults.headers.common={
+                   "Authorization": "Bearer "+sessionStorage.getItem("token"),
+                }
+
     };
 
 
     return(
         
-    <div className='APP-container'>
+    <div className='login-container'>
        <div className='form-wrapper'>    
            <div className='block'> 
             <div className='form-group'>
@@ -43,7 +48,7 @@ const Login = () => {
                 {...register("password")}
                 /> 
             </div>
-            <div className='form-group'>
+            <div className=''>
                 <button onClick={()=> handleSubmit(onSubmit)()}>Entrar</button>
             </div>
             </div>

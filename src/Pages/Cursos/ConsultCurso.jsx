@@ -1,5 +1,6 @@
 import {useForm} from 'react-hook-form';
 import './style.css'
+import Sidebar_ from '../../Components/Sidebar/sidebar_';
 const ConsultCurso = () => {
     const {register, handleSubmit} = useForm();
     
@@ -11,8 +12,11 @@ const ConsultCurso = () => {
     return(
 
     <div className='app-container'>
+        <div className='sidenav'>
+            <Sidebar_/>
+        </div>
         <div className='form-wrapper'>
-            <h1>Cadastrar Curso</h1>
+            <h1>Consultar Curso</h1>
                     <div className='form-group'>
                         <label>Nome</label>
                         <input

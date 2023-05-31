@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidenav from '../../Components/Sidebar/sidebar'
 import Users from '../../Components/Forms/users'
+import Sidebar_ from '../../Components/Sidebar/sidebar_';
 
 const CreateUser = () => {
   const onSubmit = (data)=> {
@@ -12,7 +13,7 @@ const CreateUser = () => {
     <div className='app-container'>
 
         <div className='sidenav'>
-        <Sidenav/>
+            <Sidebar_/>
         </div>
 
         <div className='form-wrapper'>

@@ -1,22 +1,20 @@
 import React from 'react'
+import axios from 'axios'
 import Table from './Table/table'
-import api from '../../Service/api'
 
-const TableUnidades = () => {
+const TableEnrollmentsUnit = () => {
   const  { useEffect, useState } = React
   const [data, setData] = useState([])
-  const token = sessionStorage.getItem("token")
 
   useEffect(() => {
 
-    api.get('/unidades', {
-      headers:{
-        Authorization: 'Bearer ' + token 
-      }
-    })
+    axios.get("http://localhost:3333/cursos")
       .then((res) => {
         const data = res.data
         console.log(data)
+        // const aux = data
+        // aux.student_name = data.student.name
+        // setData(aux)
         setData(data)
       })
   }, [])
@@ -28,8 +26,8 @@ const TableUnidades = () => {
         accessor: 'name', // accessor is the "key" in the data
       },
       {
-        Header: 'CNPJ',
-        accessor: 'cnpj',
+        Header: 'Curso',
+        accessor: 'desc',
       },
     ],
     []
@@ -40,4 +38,4 @@ const TableUnidades = () => {
   )
 }
 
-export default TableUnidades
+export default TableEnrollmentsUnit

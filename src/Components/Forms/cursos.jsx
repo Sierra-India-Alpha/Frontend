@@ -7,7 +7,7 @@ const Cursos = ({submitButtonTitle, onSubmit}) => {
     const {register, handleSubmit} = useForm();
 
   return (
-    <div className='app-container'>
+    <div className='form-container'>
        <div className='form-wrapper'>   
             <h1>Cadastrar Curso</h1>
                     <div className='form-group'>

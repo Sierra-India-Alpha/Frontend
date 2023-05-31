@@ -26,7 +26,7 @@ function TableSelectRow({ columns, data, onEditClick }) {
           ),
           Cell: ({ row }) => (
             <div>
-              <button onClick={ e => onEditClick(row.original)}>Edit</button>
+              <button onClick={ e => onEditClick(row.original)}>Atualizar</button>
             </div>
           ),
         },

@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 const Turmas = ({submitButtonTitle, onSubmit}) => {
     const {register, handleSubmit} = useForm();
   return (
-    <div className='app-container'>
+    <div className='form-container'>
         <div className='form-wrapper'>
             <h1>Cadastrar Turma</h1>
                 <div className='input-group'>

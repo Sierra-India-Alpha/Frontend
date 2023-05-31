@@ -1,11 +1,29 @@
 import React from 'react'
 import Table from './Table/table'
+import TableSelectRow from './TableSelectRow/tableSelectRow'
 import api from '../../Service/api'
+import ReactModal from 'react-modal'
+import Enrollments from '../Forms/matriculas'
 
 const TableEnrollments = () => {
   const  { useEffect, useState } = React
   const [data, setData] = useState([])
+  const [selected, setSelected] = useState({})
+  const [showModal, setShowModal] = useState(false)
+
   const token = sessionStorage.getItem("token")
+
+  const onEditClick = (enrollment) => {
+    setSelected(enrollment)
+    setShowModal(true)
+    
+  }
+
+  const onSubmit = () =>{
+    setShowModal(false)
+    
+  }
+
   useEffect(() => {
 
     api.get('/matriculas', {
@@ -15,7 +33,6 @@ const TableEnrollments = () => {
     })
       .then((res) => {
         const data = res.data
-        console.log(data)
         setData(data)
       })
   }, [])
@@ -48,14 +65,19 @@ const TableEnrollments = () => {
       },
       {
         Header: 'Status',
-        accessor: 'status.name.',
+        accessor: 'status.name',
       },
     ],
     []
   )
 
   return (
-    <Table data={data} columns={columns}/>
+    <>
+    <TableSelectRow data={data} columns={columns} onEditClick={onEditClick}/>
+    <ReactModal isOpen={showModal}>
+      <Enrollments submitButtonTitle={"Atualizar"} onSubmit={onSubmit} enrollment={selected}/>
+    </ReactModal>
+    </>
   )
 }
 

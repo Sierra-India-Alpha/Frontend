@@ -31,18 +31,21 @@ function Home() {
 
   return (
     <div className='app-container'>
+      <div className='sidenav'>
       <Sidebar_/>
-    <ReactModal 
+      </div>
+
+    {/* <ReactModal 
       isOpen={showModal}
       contentLabel="Minimal Modal Example"
     >
       <Enrollments submitButtonTitle={"Atualizar"} onSubmit={onSubmit}/>
       <button onClick={e => handleClose()}>Cancel</button>
-    </ReactModal>
+    </ReactModal> */}
 
-    <main>
+    {/* <main>
     <button onClick={e => handleOpen()}>Teste</button>
-    </main>
+    </main> */}
     </div>
   )
 }
