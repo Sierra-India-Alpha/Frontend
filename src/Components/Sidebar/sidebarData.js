@@ -76,6 +76,7 @@ export const SidebarData = [
         title: 'Alunos',
         admin: 1,
         admin2: 3,
+        admin3: 2,
         icon: <MdOutlineSchool color='##223243'/> ,
         items: [
           {

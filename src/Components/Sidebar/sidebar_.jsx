@@ -24,7 +24,7 @@ const Sidebar_ = () => {
                         <Menu className="menu"
                             transitionDuration={800}>
                             {SidebarData.map((menu, index) => (
-                                menu.admin == tipoUsuario || menu.admin2 == tipoUsuario? (
+                                menu.admin == tipoUsuario || menu.admin2 == tipoUsuario||menu.admin3 == tipoUsuario? (
                                 <SubMenu key={index} label={menu.title} className="submenu" prefix={menu.icon}>
                                     {menu.items.map((submenu, subIndex) => (
 
