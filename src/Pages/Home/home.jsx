@@ -9,7 +9,6 @@ import ReactModal from "react-modal"
 import GoodForms from "../../Components/Forms/users"
 import Cursos from '../../Components/Forms/cursos'
 import Enrollments from '../../Components/Forms/matriculas'
-import Sidenav from '../../Components/Sidebar/sidebar'
 import Sidebar_ from '../../Components/Sidebar/sidebar_'
 
 
