@@ -46,8 +46,6 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
     }, [])
    
 
-    console.log(enrollment)
-
     // const unidades = api.get("/unidades")
     // const turmas = api.get("/turmas")
 
@@ -109,7 +107,7 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                                 type='number'
                                 placeholder='CPF'
                                 {...register('student_cpf',
-                                    // {required: }
+                                //  {require}
                                 )}
                                 maxLength={14}
                                 pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
@@ -183,7 +181,8 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                                 // className={errors?. date && 'input-error'}
                                 type='date'
                                 placeholder='DD/MM/AA'
-                                {...register("student_date")}
+                                {...register("student_date", {require})
+                            }
                             />
                             {/* {errors?.date && <p className="error-message">{errors?.date}</p>} */}
                         </div>
@@ -285,7 +284,7 @@ const Enrollments = ({ submitButtonTitle, onSubmit, enrollment }) => {
                             // className={errors?. date && 'input-error'}
                             type='date'
                             placeholder='DD/MM/AA'
-                            {...register("responsible_date")}
+                            {...register("responsible_date", {require})}
                         />
                         {/* {errors?.date && <p className="error-message">{errors?.date}</p>} */}
                     </div>
