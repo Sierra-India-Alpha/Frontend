@@ -88,6 +88,7 @@ export const SidebarData = [
             title: 'Consultar Matrículas',
             link: '/consult-matriculas',
             subadmin: 1,
+            subadmin: 2,
           },
         ],
       },
