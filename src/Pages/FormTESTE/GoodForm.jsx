@@ -5,10 +5,10 @@ const GoodForm = () => {
 
     return (
         <div className='app-container'>
-        <div className='sidenav'>
+        {/* <div className='sidenav'>
             <Sidenav></Sidenav>
         </div>    
-        <CreateEnrollments />
+        <CreateEnrollments /> */}
         </div>
     );
 
