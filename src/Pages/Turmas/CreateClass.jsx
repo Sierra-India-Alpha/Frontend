@@ -1,7 +1,6 @@
 import { useForm } from 'react-hook-form';
 import './style.css'
 import Turmas from '../../Components/Forms/turmas';
-import Sidenav from '../../Components/Sidebar/sidebar';
 import Sidebar_ from '../../Components/Sidebar/sidebar_';
 const CreateClass = () => {
 

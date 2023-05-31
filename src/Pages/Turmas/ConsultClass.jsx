@@ -1,6 +1,5 @@
 import {useForm} from 'react-hook-form';
 import './style.css'
-import Sidenav from '../../Components/Sidebar/sidebar';
 import Sidebar_ from '../../Components/Sidebar/sidebar_';
 const ConsultClass = () => {
     const {register, handleSubmit} = useForm();

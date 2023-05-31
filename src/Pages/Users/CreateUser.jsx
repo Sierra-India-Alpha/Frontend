@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidenav from '../../Components/Sidebar/sidebar'
 import Users from '../../Components/Forms/users'
 import Sidebar_ from '../../Components/Sidebar/sidebar_';
 

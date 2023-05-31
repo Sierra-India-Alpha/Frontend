@@ -1,7 +1,6 @@
 import {useForm} from 'react-hook-form';
 import './style.css'
 import Enrollments from '../../Components/Forms/matriculas';
-import Sidenav from '../../Components/Sidebar/sidebar';
 import Sidebar_ from '../../Components/Sidebar/sidebar_';
 import api from '../../Service/api';
 

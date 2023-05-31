@@ -1,7 +1,6 @@
 import { useForm } from 'react-hook-form';
 import "./style.css";
 import TableEnrollments from '../../Components/Tables/tableEnrollments';
-import Sidenav from '../../Components/Sidebar/sidebar';
 import Sidebar_ from '../../Components/Sidebar/sidebar_';
 
 const ConsultEnrollments = () => {

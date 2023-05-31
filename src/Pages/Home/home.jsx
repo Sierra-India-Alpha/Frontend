@@ -1,8 +1,4 @@
 import React from 'react'
-// import { useProSidebar } from "react-pro-sidebar";
-// import Sidenav from '../../Components/Sidebar/sidebar';
-// import TableCourses from '../../Components/Tables/tableCourses';
-// import TableSelectRow from '../../Components/Tables/TableSelectRow/tableSelectRow';
 import { useState } from 'react'
 import "../Home/style.css"
 import ReactModal from "react-modal"
