@@ -75,8 +75,8 @@ export const SidebarData = [
       {
         title: 'Alunos',
         admin: 1,
-        admin2: 3,
-        admin3: 2,
+        admin2: 2,
+        admin3: 3,
         icon: <MdOutlineSchool color='##223243'/> ,
         items: [
           {
@@ -89,7 +89,7 @@ export const SidebarData = [
             title: 'Consultar Matrículas',
             link: '/consult-matriculas',
             subadmin: 1,
-            subadmin: 2,
+            subadmin2: 2,
           },
         ],
       },
